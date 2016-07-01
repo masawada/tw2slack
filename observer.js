@@ -27,6 +27,7 @@ slack.setWebhook(slack_webhook_uri);
 
 const postToSlack = (data) => {
   if (!data.text || !data.user) { return; }
+  if (data.retweeted_status) { return; }
 
   const username   = data.user.screen_name;
   const tweet_uri  = `https://twitter.com/${username}/status/${data.id_str}`;
