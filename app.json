@@ -1,0 +1,36 @@
+{
+  "name": "tw2slack",
+  "description": "",
+  "repository": "https://github.com/masawada/tw2slack",
+  "keywords": ["slack", "twitter"],
+  "env": {
+    "CONSUMER_KEY": {
+      "description": "Twitter Consumer Key",
+      "required": true
+    },
+    "CONSUMER_SECRET": {
+      "description": "Twitter Consumer Secret",
+      "required": true
+    },
+    "ACCESS_TOKEN_KEY": {
+      "description": "Twitter Access Token",
+      "required": true
+    },
+    "ACCESS_TOKEN_SECRET": {
+      "description": "Twitter Access Token Secret",
+      "required": true
+    },
+    "SLACK_WEBHOOK_URI": {
+      "description": "Slack Webhook URI",
+      "required": true
+    },
+    "SLACK_CHANNEL": {
+      "description": "Slack Channel to post",
+      "required": true
+    },
+    "KEYWORD": {
+      "description": "Keywords to track. Phrases of keywords are specified by a comma-separated list.",
+      "required": true
+    }
+  }
+}
